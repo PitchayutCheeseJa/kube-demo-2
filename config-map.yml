@@ -9,7 +9,7 @@ data:
       listen 80;
       server_name _;
       location / {
-        add_header Content-Type text/plain;
-        return 200 "Pitchayut CheeseJa";
+        default_type application/json;
+        return 200 "CheeseJa";
       }
     }
